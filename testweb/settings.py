@@ -25,7 +25,7 @@ sys.path.insert(0,os.path.join(BASE_DIR, 'extra_apps'))
 SECRET_KEY = '51$ou1bn8w(+y%6s$w3#-bm%4m9n&+_ri4scv)y8$(^%2x#c0n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*','thebks.site']
 
