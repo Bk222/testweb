@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block titile %}
+首页
+{% endblock %}
+
+{% load staticfiles %}
+<!--crumbs start-->
+{% block custom_bread %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="banner">
+			<div class="wp">
+				<div class="fl">
+					<div class="imgslide">
+						<ul class="imgs">
+
+                            <li>
+                                    <a href="">
+                                        <img width="1200" height="478" src="{% static 'images/timg.jpg' %}" />
+                                    </a>
+                                </li>
+
+                            <li>
+                                    <a href="">
+                                        <img width="1200" height="478" src="{% static 'images/bimg.jpg' %}" />
+                                    </a>
+                                </li>
+
+						</ul>
+					</div>
+					<div class="unslider-arrow prev"></div>
+					<div class="unslider-arrow next"></div>
+				</div>
+
+				</div>
+
+
+			</div>
+<!--banner end-->
+<!--feature start-->
+	<section>
+		<div class="wp">
+			<ul class="feature">
+				<li class="feature1">
+					<img class="pic" src="{% static 'images/feature1.png' %}"/>
+					<p class="center">专业权威</p>
+				</li>
+				<li class="feature2">
+					<img class="pic" src="{% static 'images/feature2.png' %}"/>
+					<p class="center">课程最新</p>
+				</li>
+				<li class="feature3">
+					<img class="pic" src="{% static 'images/feature3.png' %}"/>
+					<p class="center">名师授课</p>
+				</li>
+				<li class="feature4">
+					<img class="pic" src="{% static 'images/feature4.png' %}"/>
+					<p class="center">数据真实</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+<!--feature end-->
+<!--module1 start-->
+
+{% endblock %}
+
+{% block custom_js %}
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+{% endblock %}
